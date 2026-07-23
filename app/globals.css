@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F5EFE6;
+    color: #2C2A28;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(90deg, #D4AF37 0%, #E8C547 50%, #D4AF37 100%);
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Kit (ConvertKit) form overrides — Quiet Luxury theme
+   Targets the form injected by data-uid="97acba5efc"
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/* Strip Kit's default card/box styling */
+.formkit-form[data-uid="97acba5efc"],
+.formkit-form[data-uid="97acba5efc"] *,
+.kit-form-container .formkit-form {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Outer form wrapper */
+.kit-form-container .formkit-form {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 28rem !important;
+}
+
+/* Hide Kit's default headline / subheadline inside the embed
+   (we already have our own headline above) */
+.kit-form-container .formkit-form h1,
+.kit-form-container .formkit-form h2,
+.kit-form-container .formkit-form .formkit-header,
+.kit-form-container .formkit-form .formkit-subheader {
+  display: none !important;
+}
+
+/* Email input field */
+.kit-form-container .formkit-form .formkit-field input,
+.kit-form-container .formkit-form input[type="email"],
+.kit-form-container .formkit-form input[name="email_address"] {
+  width: 100% !important;
+  padding: 1rem 1.25rem !important;
+  border-radius: 0.75rem !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #F4F4F0 !important;
+  font-size: 1rem !important;
+  font-family: inherit !important;
+  margin-bottom: 0.75rem !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+.kit-form-container .formkit-form .formkit-field input::placeholder,
+.kit-form-container .formkit-form input[type="email"]::placeholder {
+  color: #9ca3af !important;
+}
+
+.kit-form-container .formkit-form .formkit-field input:focus,
+.kit-form-container .formkit-form input[type="email"]:focus {
+  outline: none !important;
+  border-color: #D4AF37 !important;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25) !important;
+}
+
+/* Submit button */
+.kit-form-container .formkit-form .formkit-submit,
+.kit-form-container .formkit-form button[type="submit"] {
+  width: 100% !important;
+  padding: 1rem 1.5rem !important;
+  border-radius: 0.75rem !important;
+  background: #D4AF37 !important;
+  color: #0A192F !important;
+  font-weight: 600 !important;
+  font-size: 0.9375rem !important;
+  font-family: inherit !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s !important;
+  letter-spacing: 0.01em !important;
+}
+
+.kit-form-container .formkit-form .formkit-submit:hover,
+.kit-form-container .formkit-form button[type="submit"]:hover {
+  background: #E8C547 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25) !important;
+}
+
+/* Guarantee / privacy note text */
+.kit-form-container .formkit-form .formkit-guarantee,
+.kit-form-container .formkit-form .formkit-disclaimer,
+.kit-form-container .formkit-form p {
+  color: rgba(244, 244, 240, 0.55) !important;
+  font-size: 0.75rem !important;
+  text-align: center !important;
+  margin-top: 0.75rem !important;
+}
+
+/* Hide Kit branding / powered-by footer */
+.kit-form-container .formkit-form .formkit-powered-by,
+.kit-form-container .formkit-form [data-element="powered-by"] {
+  display: none !important;
+}
