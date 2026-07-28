@@ -20,27 +20,31 @@ export default function ProductGrid() {
         <h2 className="font-serif text-3xl md:text-5xl text-[#2C2A28] leading-tight text-center mb-4">
           Start free. Upgrade when you&rsquo;re ready.
         </h2>
-        <p className="font-sans text-[#2C2A28] text-base md:text-lg text-center max-w-xl mx-auto mb-16 leading-relaxed">
+        <p className="font-sans text-[#2C2A28] text-base md:text-lg text-center max-w-xl mx-auto mb-4 leading-relaxed">
+          Start with the free Roadmap. The Vault is there when you&rsquo;re
+          ready for the next step — no rush either way.
+        </p>
+        <p className="font-sans text-[#2C2A28]/60 text-sm text-center max-w-xl mx-auto mb-16">
           Two tools, one path — for women 50+ building quietly, intentionally,
           and on their own terms.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 items-stretch">
-          {/* ── Card 1: Free Roadmap ── */}
+        <div className="grid md:grid-cols-5 gap-8 items-stretch">
+          {/* ── Card 1: Free Roadmap — primary, larger footprint ── */}
           <div
             id="roadmap"
-            className="relative flex flex-col bg-white rounded-3xl border border-[#2C2A28]/8 shadow-md overflow-hidden scroll-mt-24"
+            className="relative flex flex-col bg-white rounded-3xl border-2 border-[#2E865F]/40 shadow-xl shadow-[#2E865F]/10 overflow-hidden scroll-mt-24 md:col-span-3"
           >
             <div className="h-1.5 w-full bg-[#2E865F]" />
 
             <div className="absolute top-7 right-7">
-              <span className="font-sans text-[10px] tracking-[0.2em] uppercase text-[#2E865F] border border-[#2E865F]/40 rounded-full px-3 py-1 bg-[#2E865F]/8">
-                Free Guide
+              <span className="inline-flex items-center gap-1 font-sans text-[10px] tracking-[0.2em] uppercase text-[#F5EFE6] rounded-full px-3 py-1 bg-[#2E865F]">
+                Start Here — Free
               </span>
             </div>
 
             <div className="flex items-center justify-center pt-12 px-10">
-              <div className="relative w-full max-w-[220px] aspect-square">
+              <div className="relative w-full max-w-[240px] aspect-square">
                 <div
                   aria-hidden="true"
                   className="pointer-events-none absolute -inset-3 rounded-xl opacity-20"
@@ -63,10 +67,10 @@ export default function ProductGrid() {
               <p className="font-sans text-[#2E865F] text-[10px] tracking-[0.25em] uppercase mb-3">
                 Lead Magnet
               </p>
-              <h3 className="font-serif text-xl md:text-2xl text-[#2C2A28] leading-snug mb-3">
+              <h3 className="font-serif text-2xl md:text-3xl text-[#2C2A28] leading-snug mb-3">
                 The Second Act Wealth Roadmap
               </h3>
-              <p className="font-sans text-[#2C2A28] text-sm leading-relaxed mb-8 flex-1">
+              <p className="font-sans text-[#2C2A28] text-sm md:text-base leading-relaxed mb-8 flex-1">
                 A mature professional&rsquo;s guide to faceless digital
                 products — the strategic overview that shows you exactly
                 where to start, in plain language, with zero pressure to
@@ -88,7 +92,7 @@ export default function ProductGrid() {
                     href={BEACONS_CAPTURE_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group inline-flex items-center gap-2 bg-[#2E865F] hover:bg-[#20613F] text-[#F5EFE6] font-semibold text-sm py-3 px-6 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-[#2E865F]/25 hover:-translate-y-0.5 shrink-0"
+                    className="group inline-flex items-center gap-2 bg-[#2E865F] hover:bg-[#20613F] text-[#F5EFE6] font-semibold text-base py-3.5 px-7 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-[#2E865F]/25 hover:-translate-y-0.5 shrink-0"
                   >
                     Get the Roadmap
                     <span className="transition-transform duration-200 group-hover:translate-x-0.5">
@@ -100,14 +104,14 @@ export default function ProductGrid() {
             </div>
           </div>
 
-          {/* ── Card 2: $17 Starter Kit & Implementation Vault ── */}
-          <div className="relative flex flex-col bg-white rounded-3xl border-2 border-[#D4AF37]/60 shadow-xl shadow-[#D4AF37]/10 overflow-hidden">
-            <div className="h-1.5 w-full bg-gradient-to-r from-[#D4AF37] via-[#E8C547] to-[#D4AF37]" />
+          {/* ── Card 2: $17 Starter Kit & Implementation Vault — secondary, the "next step" ── */}
+          <div className="relative flex flex-col bg-white rounded-3xl border border-[#D4AF37]/35 shadow-md overflow-hidden md:col-span-2">
+            <div className="h-1.5 w-full bg-[#D4AF37]/50" />
 
             <div className="absolute top-7 right-7">
-              <span className="inline-flex items-center gap-1 font-sans text-[10px] tracking-[0.2em] uppercase text-[#2C2A28] rounded-full px-3 py-1 bg-[#D4AF37]">
-                <Star size={11} fill="currentColor" />
-                Best Value — $17
+              <span className="inline-flex items-center gap-1 font-sans text-[10px] tracking-[0.2em] uppercase text-[#B8971E] rounded-full px-3 py-1 bg-[#D4AF37]/12 border border-[#D4AF37]/40">
+                <Star size={11} />
+                Next Step — $17
               </span>
             </div>
 

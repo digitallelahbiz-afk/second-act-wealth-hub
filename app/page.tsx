@@ -2,6 +2,7 @@ import NavBar from '@/components/NavBar'
 import HeroSection from '@/components/HeroSection'
 import WhyFacelessSection from '@/components/WhyFacelessSection'
 import ProductGrid from '@/components/ProductGrid'
+import Testimonials from '@/components/Testimonials'
 import AffiliateSection from '@/components/AffiliateSection'
 import Footer from '@/components/Footer'
 
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <WhyFacelessSection />
         <ProductGrid />
+        <Testimonials />
         <AffiliateSection />
       </main>
       <Footer />
