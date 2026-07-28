@@ -74,6 +74,8 @@ export default function AffiliateSection() {
               </p>
               <p className="text-[#F5EFE6]/90 text-base leading-relaxed mb-5">
                 Below is a preview of what&rsquo;s inside the full framework.
+                It&rsquo;s a paid, in-depth program — a bigger investment than
+                the Vault, and worth going in with clear eyes about that.
               </p>
 
               <p className="font-serif text-[#F5EFE6] text-lg mb-4">

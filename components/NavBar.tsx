@@ -34,7 +34,7 @@ export default function NavBar() {
             href="#sneak-peek"
             className="font-sans text-[#2C2A28]/70 hover:text-[#2E865F] text-sm transition-colors duration-200"
           >
-            Sneak Peek
+            Recommended Course
           </a>
         </nav>
 
